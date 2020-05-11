@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FIXML>
+	<Header>
+		<RequestHeader>
+			<MessageKey>
+				<RequestUUID></RequestUUID>
+				<ServiceRequestId>executeFinacleScript</ServiceRequestId>
+				<ServiceRequestVersion>4</ServiceRequestVersion>
+				<ChannelId>YBT</ChannelId>
+			</MessageKey>
+			<RequestMessageInfo>
+				<BankId>01</BankId>
+				<TimeZone>GMT+08:00</TimeZone>
+				<EntityId></EntityId>
+				<EntityType></EntityType>
+				<ArmCorrelationId></ArmCorrelationId>
+				<MessageDateTime></MessageDateTime>
+			</RequestMessageInfo>
+			
+		</RequestHeader>
+	</Header>
+	<Body>
+		<executeFinacleScriptRequest>
+			<ExecuteFinacleScriptInputVO>
+				<requestId>interface_UpdateContractBarCode.scr</requestId>
+			</ExecuteFinacleScriptInputVO>
+			<executeFinacleScript_CustomData>
+				<ProposalPrtNo></ProposalPrtNo>
+				<ContNo></ContNo>
+				<ContPrtNo></ContPrtNo>
+			</executeFinacleScript_CustomData>
+		</executeFinacleScriptRequest>
+	</Body>
+</FIXML>
