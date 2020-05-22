@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TranData>
+	<Head>
+		<TranDate></TranDate>
+		<TranTime></TranTime>
+		<TranCom></TranCom>
+		<NodeNo></NodeNo>
+		<TellerNo></TellerNo>
+		<TranNo></TranNo>
+		<FuncFlag></FuncFlag>
+		<ChannelNo></ChannelNo>
+		<CompanyID></CompanyID>
+	</Head>
+	<Body>
+		<ProposalPrtNo></ProposalPrtNo>
+		<ContNo></ContNo>
+		<OldContPrtNo></OldContPrtNo>
+		<ContPrtNo></ContPrtNo>
+	</Body>
+</TranData>
