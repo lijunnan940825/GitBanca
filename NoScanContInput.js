@@ -584,7 +584,7 @@ function PrintQuery(){
 	     var payDate=GrpGrid.getRowColData(tRow-1,13);
 	     var appntName  = GrpGrid.getRowColData(tRow-1,15);
 	 	var flagtype=GrpGrid.getRowColData(tRow-1,14);
-	 	var ckDateTime=GrpGrid.getRowColData(tRow-1,18);
+	 //	var ckDateTime=GrpGrid.getRowColData(tRow-1,18);
 	 	var	polDate = GrpGrid.getRowColData(tRow - 1, 3);
 	 	
 	 	if(confirm("您确定要打印："+prtNo+"合同么")){ 	
@@ -650,7 +650,7 @@ function RePrintQuery()
      var out=GrpGrid.getRowColData(tRow-1,13);
      var funcType  = GrpGrid.getRowColData(tRow-1,15);
  	var flagtype=GrpGrid.getRowColData(tRow-1,14);
-	var ckDateTime=GrpGrid.getRowColData(tRow-1,18);
+//	var ckDateTime=GrpGrid.getRowColData(tRow-1,18);
  	var	polDate = GrpGrid.getRowColData(tRow - 1, 3);
 // 	if(chekdate(polDate+" "+ckDateTime)!=0){
 //		  alert("超过24小时的保单！不能进行打印");
@@ -726,7 +726,7 @@ function AevicePrintQuery()
      var out=GrpGrid.getRowColData(tRow-1,13);
      var funcType  = GrpGrid.getRowColData(tRow-1,15);
  	var flagtype=GrpGrid.getRowColData(tRow-1,14);
- 	 var ckDateTime=GrpGrid.getRowColData(tRow-1,18);
+ //	 var ckDateTime=GrpGrid.getRowColData(tRow-1,18);
 	 	var	polDate = GrpGrid.getRowColData(tRow - 1, 3);
   
   
