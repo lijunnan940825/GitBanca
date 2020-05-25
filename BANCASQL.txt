@@ -1,0 +1,3 @@
+insert into LDUserTOMenuGrp (UserCode,MenuGrpCode)
+      select UserCode,'22'
+      from LDUserTOMenuGrp  where MenuGrpCode in('195','24') and  group by usercode ;
