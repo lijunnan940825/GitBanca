@@ -37,7 +37,7 @@ if (SQLID.equals("NoAdviceContInputSql_0")) {
 	SQL = "select * from (select PROPOSALCONTNO aa,AGENTBANKCODE pp ,PolApplyDate cc ,Operator dd,"
 			+ "transno ee ,cardflag ff ,GRPCONTNO gg ,appntname hh ,decode(agenttype,'N','线下扣款','P','批量扣款','Y','实时扣款') ii,agenttype jj,insurancecom kk,a.appntname mm,'本行客户' nn,decode"
 			+"(a.PRINTFLAG,'','未承保','未承保','未承保','已承保','已承保') oo,EXECUTECOM zz ,decode(EXECUTECOM,'CCICHM101','财产险','TOPUP','投连追加','传统寿险'),ManageCom bb,MakeTime mt from lccont  a "
-			+ "where a.forceUWReason is null and";
+			+ "where a.forceUWReason is null and appflag not in('15','16','01','12','00','14','13','03','c1') and ";
 	//+ "where (a.forceUWReason != 'S' or a.forceUWReason is null ) and";
 	//System.out.println(request.getParameter("InputDate"));
 	if(request.getAttribute("PrtNo".toUpperCase())==null

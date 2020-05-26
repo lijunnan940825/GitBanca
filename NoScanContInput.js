@@ -400,7 +400,8 @@ function easyQueryClick1()
 	if (GrpGrid.mulLineCount==0)
 	{
 		var urlStr="../common/jsp/MessagePage.jsp?picture=C&content=" + "未查询到结果" ;
-		showModalDialog(urlStr,window,"status:no;help:0;close:0;dialogWidth:550px;dialogHeight:350px");
+	   showModalDialog(urlStr,window,"status:no;help:0;close:0;dialogWidth:250px;dialogHeight:150px");
+		// alert( "未查询到结果" );
 	}
 	return true;
 } 
@@ -744,8 +745,9 @@ function AevicePrintQuery()
         	if(dataServer==polDate){
         		
         	}else{
-        		alert("只能打印当天Aevice与回执");
-        		return;
+        		alert("测试版本不校验当天时间")
+        		//alert("只能打印当天Aevice与回执");
+        		//return;
         	}
         }
 //      if(chekdate(polDate+" "+ckDateTime)!=0){
