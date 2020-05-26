@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Questionnaire" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4ea4ed3a-3c7a-4de3-8b22-a53d14b82222">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="628"/>
+	<field name="branchName2" class="java.lang.String"/>
+	<field name="branchName" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="295" y="737" width="252" height="20" uuid="189f0202-8cdd-4419-9399-f86af38bf880"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branchName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="109" width="536" height="44" forecolor="#333333" uuid="14a5869e-0c58-42e1-8ed0-8d9436dc3529"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="SansSerif" size="10" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[This Advice is to confirm the transaction details of premium deduction only and shall not be deemed that the Bank is liable in any way under relevant insurance policy. In case of any consistency between this Advice and the insurance policy/relevant documents, the terms in the insurance policy/relevant documents shall prevail.  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="24" width="536" height="15" uuid="10ed5a58-1083-4fd4-8cc9-5e23cef1de33"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[无误。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="81" width="536" height="15" uuid="815115e3-6e4e-4a03-9b62-e2ea3d9d318b"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[本通知仅用于确认我行代为扣划保费的交易信息，本通知并不代表我行在保险单项下承担任何责任。如本通知与保险单及]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="10" width="536" height="15" uuid="9da94d77-9c62-4f59-a3b5-39535554cbc6"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[如上述资料有任何错误，请在本通知发出之日起七（7）天内通知我行的客户经理，否则本通知之所有内容将会被视为正确]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="178" width="536" height="15" uuid="04d08aef-8a71-4a2b-903a-b048103da91a"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[This Advice is computers print out and does not require any bank signature.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="95" width="536" height="15" uuid="dfca2532-6ad7-4d0c-b843-5bb2567b128b"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[相关文件有任何不一致的，应以保险单及相关文件的规定为准。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="38" width="536" height="42" forecolor="#333333" uuid="e6ccff37-946b-4f5a-89bf-092c00d5b71b"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="SansSerif" size="10" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[Please revert to your relationship manager within seven (7) days after the date of this Advice if there is any discrepancy. Otherwise, we will deem all contents of this Advice as correct. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="164" width="536" height="15" uuid="217c90fb-c738-496e-ba85-c57d7c75d8a9"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[此乃电脑编印文件，毋须签署。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="204" width="536" height="15" uuid="143ed066-c2c0-4672-add6-51d94d86c622"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[如中英文版本间有任何不一致之处，应以中文版为准。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="218" width="536" height="31" forecolor="#333333" uuid="5f752b92-75b4-4fed-b477-e9b72cac3bef"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="SansSerif" size="10" isBold="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[In case of inconsistency between the English and Chinese versions, the content of the Chinese version shall prevail and apply.
+]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="295" y="757" width="160" height="20" uuid="f5762274-dee0-41f5-8d8f-f695a783b9b3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branchName2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

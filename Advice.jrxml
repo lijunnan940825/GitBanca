@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Questionnaire" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4ea4ed3a-3c7a-4de3-8b22-a53d14b82222">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="100"/>
+	<field name="adviceDate" class="java.lang.String"/>
+	<field name="postalCode" class="java.lang.String"/>
+	<field name="cityNative" class="java.lang.String"/>
+	<field name="cityNative2" class="java.lang.String"/>
+	<field name="addr1" class="java.lang.String"/>
+	<field name="addr2" class="java.lang.String"/>
+	<field name="custName" class="java.lang.String"/>
+	<field name="custName2" class="java.lang.String"/>
+	<field name="productName" class="java.lang.String"/>
+	<field name="productName2" class="java.lang.String"/>
+	<field name="companName" class="java.lang.String"/>
+	<field name="companName2" class="java.lang.String"/>
+	<field name="applicationOrPolicy" class="java.lang.String"/>
+	<field name="applicationOrPolicy2" class="java.lang.String"/>
+	<field name="contNoOrPrtNo" class="java.lang.String"/>
+	<field name="insuredDate" class="java.lang.String"/>
+	<field name="premiumNature" class="java.lang.String"/>
+	<field name="premiumNature2" class="java.lang.String"/>
+	<field name="premiumCcy" class="java.lang.String"/>
+	<field name="premiumAmt" class="java.lang.String"/>
+	<field name="premiumDeductionDate" class="java.lang.String"/>
+	<field name="accountNo" class="java.lang.String"/>
+	<field name="transRefNo" class="java.lang.String"/>
+	<field name="remarks" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="198" width="122" height="17" uuid="3c8ab484-349a-49c0-ac4a-37399919a542"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[尊贵的客户：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="0" width="136" height="23" uuid="2561db4a-243e-4ce2-8622-1746c8541696"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="15" isBold="true" isItalic="false" pdfFontName="/home/bancaprd/font/simkai.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[星展银行代销产品]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="376" y="91" width="100" height="20" uuid="a7d75b3c-e27d-4f80-bfe5-dfe071277603"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[日期（日/月/年）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="111" width="82" height="20" uuid="4abb25d9-e1e7-4f46-9296-820d0bc6fe24"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="388" width="526" height="15" uuid="c23f81a1-3b80-4614-a492-2fc879b4454a"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[我们在此通知您，我行已为您扣划上述保险产品的以下保费，交易详情如下：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="56" width="82" height="20" uuid="7800ffba-f8bf-411a-8d79-b2182115dc45"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postalCode}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="96" width="112" height="20" uuid="75471f7d-5468-49a8-80d1-c80bb3ac28d2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addr1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="476" y="111" width="82" height="20" uuid="86752470-680c-4690-9c2c-af2a6b7839cb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{adviceDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="437" width="133" height="15" uuid="b7d9d93d-8cbb-4e7c-833b-50c15c44e10f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[保费性质]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="431" width="543" height="1" uuid="82bd5ab0-8fc5-4d4a-90c3-f2e125cde4e0"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4" y="713" width="543" height="1" uuid="e96576fb-156c-4434-b14f-4c935291f7b8"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="547" y="432" width="1" height="281" uuid="debe6a57-dd0d-41ac-b858-5731b6e5599f"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4" y="471" width="543" height="1" uuid="965d6ebc-d8c6-4ad5-9687-db45f9bc6342"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4" y="511" width="543" height="1" uuid="cb58ef5e-3d84-4a0b-b28c-940baf023d9b"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4" y="551" width="543" height="1" uuid="7c278186-f11c-4351-8250-06e38913cfc0"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="5" y="592" width="543" height="1" uuid="c01ff43f-1328-410d-9417-1f3c634671d5"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="4" y="631" width="543" height="1" uuid="f00ff523-6131-41b0-9736-e907809a3ec8"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="251" y="432" width="1" height="281" uuid="71db4a7e-ac99-4d93-86ac-2b7e8a4de33e"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="450" y="20" width="105" height="23" uuid="ebf8a30a-f2f3-41be-b6d6-7378363b6395"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="15" isBold="true" pdfFontName="/home/bancaprd/font/simkai.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[保险划扣通知]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="38" width="184" height="23" uuid="1e031979-0995-462b-9e60-7d15926e6723"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="12" isBold="true" pdfFontName="/home/bancaprd/font/simkai.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[DBS the 3rd Party Insurance ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="374" y="56" width="184" height="23" uuid="affd2bc0-4bab-4b2e-a225-6f810406f6bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="12" isBold="true" pdfFontName="/home/bancaprd/font/simkai.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Premium Deduction Advice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="76" width="82" height="20" uuid="a7fce6ce-79ef-4f89-841a-6b41bb32aab7"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="76" width="82" height="20" uuid="aecef6f3-7e6c-4fd1-bf13-0fd48eb64199"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cityNative}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="83" y="76" width="82" height="20" uuid="cb53e8cb-3232-4856-ac92-27309cfc501f"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="83" y="76" width="82" height="20" uuid="55d0ee2a-60a6-4e3a-a883-25adf23c8e51"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cityNative2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="116" width="112" height="20" uuid="02ae827d-37ea-4822-b4f8-32f626a67c3a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addr2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="136" width="82" height="20" uuid="61ce16d3-6c98-4760-9131-518d74762db1"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{custName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="136" width="82" height="20" uuid="bea73346-14a8-4ce7-a7ca-5ac912e17c87"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="214" width="122" height="17" uuid="5cf0c00d-f008-4288-9a3d-008c26316a43"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Dear Valued Customer,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="403" width="553" height="15" uuid="2e1377e1-13ce-4a62-a774-5168c51af29c"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="SansSerif" size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[We hereby inform you that we have deducted below premium under the Insurance Product, with transaction details below. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="56" width="82" height="20" uuid="56e97327-04cb-4f9f-bff4-b80e16e2c11a"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="432" width="1" height="281" uuid="f84e9bc8-ff85-4a4c-8266-75e24bdbc019"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="14" y="451" width="230" height="15" uuid="59b1bd2d-52f5-474f-a720-9c40027915d7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Nature of Insurance Premium]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="477" width="133" height="15" uuid="5b741711-b252-4338-93ca-0ad0f0564f03"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[保费币种]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="491" width="230" height="15" uuid="2a3b0348-c906-4e22-94f4-267a0431d27b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Insurance Premium Currency]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="671" width="543" height="1" uuid="81afb556-fc5d-4eba-8c13-559116bec113"/>
+				<graphicElement>
+					<pen lineWidth="0.25" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="14" y="532" width="230" height="15" uuid="a1f22bb5-7848-47c1-af4d-8dd676c6f82e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Insurance Premium Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="518" width="133" height="15" uuid="5e34d00c-5f48-44c3-8d54-bcfa0ed23924"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[保费金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="572" width="230" height="15" uuid="3a4e5314-22f9-4269-9a0d-b6ac7eb3afbf"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Premium Deduction Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="558" width="133" height="15" uuid="bb34ddb5-5ef2-4caf-afc4-c6b6605987f2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[保费扣款日期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="604" width="230" height="15" uuid="20c77385-903c-48a2-8a39-117419106e07"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Designated Account Number for Deducting]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="592" width="133" height="15" uuid="d4122310-a157-47c7-b16c-9a6450d30d7d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[指定扣划保费账户号码]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="617" width="230" height="15" uuid="c651acd1-1e30-457f-aa7e-9b1228f6a576"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Premium]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="651" width="230" height="15" uuid="a7208f8c-4a2c-44e3-8dcf-f14364ef0bbe"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Transaction Reference Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="637" width="133" height="15" uuid="2541e6cc-d6b2-47cb-ad39-a3b4a0051381"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[交易流水号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="678" width="133" height="15" uuid="c1f66717-84c6-4238-8495-18eb8f53bcf5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[备注]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="692" width="230" height="15" uuid="85a10836-8155-4662-89db-dd51f431dbfa"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Remarks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="376" y="111" width="100" height="20" uuid="88b5a67c-128a-4a00-bbde-73aa80111523"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[Date(DD/MM/YYYY):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="237" width="553" height="71" uuid="c8686bd2-f0a5-4a68-ab7e-32aa780c1eba"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="237" width="554" height="71" uuid="a90abe64-3e45-4eed-bc6c-010b6bfe4a00"/>
+				<textElement verticalAlignment="Top">
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{companName}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="316" width="554" height="71" uuid="d80449e0-3e1f-4491-a44e-7406e10e96d4"/>
+				<textElement verticalAlignment="Top">
+					<font size="10" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{companName2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="316" width="553" height="71" uuid="a61ff7ec-8692-42e7-b172-2bb69013ca0f"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="278" y="441" width="160" height="20" uuid="9af799cb-0268-4a89-b613-d6436ee1c908"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{premiumNature2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="441" width="160" height="20" uuid="2efa0ffd-702b-4597-9e51-512175b87053"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="278" y="481" width="160" height="20" uuid="4861598e-fd59-4687-8f3c-e8d5b91aa6af"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{premiumCcy}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="481" width="160" height="20" uuid="adc4094c-1120-4cae-ac75-ceb8220fe6cc"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="278" y="521" width="160" height="20" uuid="aae1763d-5bd3-4f6e-a897-e42204958b02"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{premiumAmt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="521" width="160" height="20" uuid="7bb4b731-6a18-4ca5-a53f-7bc589d7ac12"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="278" y="563" width="160" height="20" uuid="2e846424-a3da-4b26-b7dc-4430898c7531"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{premiumDeductionDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="563" width="160" height="20" uuid="9675b7ad-9e8f-4a7e-920a-256a8ed2170e"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="278" y="602" width="160" height="20" uuid="2cd38c5b-2cdb-41e7-a351-abf9f0377e50"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="602" width="160" height="20" uuid="f58e9196-2ee7-4dc9-b471-151a1c868425"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="278" y="641" width="160" height="20" uuid="00375a3c-3bff-4f31-8e4c-7e2056ed26ba"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transRefNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="641" width="160" height="20" uuid="e295a308-f016-4567-a145-72a2663dd109"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="683" width="252" height="20" uuid="35412a44-248f-468b-ba36-9237882aff13"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="278" y="683" width="252" height="20" uuid="189f0202-8cdd-4419-9399-f86af38bf880"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{remarks}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="156" width="82" height="20" uuid="a79a1e0e-9212-482e-9978-cc1deb27ae89"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="2" y="156" width="82" height="20" uuid="218453f8-80fe-442e-8ca4-d13adc1feb36"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{custName2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

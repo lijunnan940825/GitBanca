@@ -758,11 +758,11 @@ function AevicePrintQuery()
       alert("未承保的保单！不能打印Aevice与回执");
       return;
       }
-   	 //window.open("../ireportPrint/printPL.jsp?contNo="+fm.all("ProposalContNo").value+"&AgentCom="+fm.all("AgentCom").value+"&TransNo="+fm.all("TransNo").value);
+   	 window.open("../ireportPrint/AeviceprintPL.jsp?contNo="+prtNo+"&TransNo="+TransNo);
    	
-    	 fm.action="../ireportPrint/AeviceprintPL.jsp?contNo="+prtNo+"&TransNo="+TransNo;
-    	 fm.submit(); //提交
-    	 fm.action="./AeviceContInput.jsp";
+    	//fm.action="../ireportPrint/AeviceprintPL.jsp?contNo="+prtNo+"&TransNo="+TransNo;
+    	// fm.submit(); //提交
+    	// fm.action="./AeviceContInput.jsp";
     }
 	
 	
