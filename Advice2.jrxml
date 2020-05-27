@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Questionnaire" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4ea4ed3a-3c7a-4de3-8b22-a53d14b82222">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="628"/>
+	<property name="ireport.y" value="288"/>
 	<field name="branchName2" class="java.lang.String"/>
 	<field name="branchName" class="java.lang.String"/>
 	<background>
@@ -20,8 +20,8 @@
 	<detail>
 		<band height="802" splitType="Stretch">
 			<textField isBlankWhenNull="true">
-				<reportElement x="295" y="737" width="252" height="20" uuid="189f0202-8cdd-4419-9399-f86af38bf880"/>
-				<textElement verticalAlignment="Middle">
+				<reportElement x="230" y="321" width="317" height="20" uuid="189f0202-8cdd-4419-9399-f86af38bf880"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{branchName}]]></textFieldExpression>
@@ -98,12 +98,19 @@
 ]]></text>
 			</staticText>
 			<textField isBlankWhenNull="true">
-				<reportElement x="295" y="757" width="160" height="20" uuid="f5762274-dee0-41f5-8d8f-f695a783b9b3"/>
-				<textElement verticalAlignment="Middle">
+				<reportElement x="230" y="347" width="317" height="20" uuid="f5762274-dee0-41f5-8d8f-f695a783b9b3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
 					<font size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{branchName2}]]></textFieldExpression>
 			</textField>
+			<staticText>
+				<reportElement x="230" y="366" width="317" height="20" uuid="dd6d1e1f-4fc7-4df5-a8fe-0c544d89c750"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[DBS Bank (China) Limited]]></text>
+			</staticText>
 		</band>
 	</detail>
 	<columnFooter>
